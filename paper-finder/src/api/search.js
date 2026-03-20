@@ -1,4 +1,4 @@
-const API_KEY = "b3ef4a14-01e6-46fe-8988-919cae37bd21";
+const API_KEY = import.meta.env.VITE_EXA_API_KEY;
 
 export async function searchPapers({ query, mode = "neural", numResults = 6 }) {
   const res = await fetch("https://api.exa.ai/search", {
